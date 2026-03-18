@@ -7,11 +7,30 @@ import './index.css'
 
 const theme = createTheme({
   palette: {
+    mode: 'dark',
     primary: {
-      main: '#e91e63', // Pink color
+      main: '#23f0ff',
     },
     secondary: {
-      main: '#ff9800', // Orange accent
+      main: '#ff824a',
+    },
+    background: {
+      default: '#071722',
+      paper: '#0b1f2f',
+    },
+  },
+  typography: {
+    fontFamily: '"Sora", "Space Grotesk", "Segoe UI", sans-serif',
+    h2: {
+      fontFamily: '"Orbitron", "Sora", sans-serif',
+      letterSpacing: '0.02em',
+    },
+    h4: {
+      fontFamily: '"Orbitron", "Sora", sans-serif',
+      letterSpacing: '0.01em',
+    },
+    h6: {
+      fontFamily: '"Space Grotesk", "Sora", sans-serif',
     },
   },
 })
