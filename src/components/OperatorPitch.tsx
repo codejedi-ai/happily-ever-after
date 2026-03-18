@@ -15,9 +15,11 @@ export default function OperatorPitch() {
           <Box>
             <Typography variant="h4" sx={{ fontWeight: 800, mb: 1.2 }}>Why Operators Choose Us</Typography>
             <Typography sx={{ color: '#bcd3e2', lineHeight: 1.85 }}>
-              Las Vegas boulevard energy combined with a hard-compliance B2B infrastructure. Licensed operators
-              plug into our venue grid, guest verification pipeline, and analytics dashboard — capturing
-              demand from travellers seeking premium dating experiences in East Africa.
+              International marriage introduction has a centuries-long legitimate history and a clear legal
+              framework. Licensed introduction agencies, venue operators, and travel partners plug directly
+              into our city infrastructure — guest verification, curated meeting environments, and full
+              compliance tooling. Clients pay for professional introduction services. What happens next
+              is entirely their own story.
             </Typography>
           </Box>
           <Stack spacing={1.2}>

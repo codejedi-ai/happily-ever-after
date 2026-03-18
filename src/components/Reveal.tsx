@@ -15,10 +15,10 @@ function useReveal() {
   return ref
 }
 
-export default function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+export default function Reveal({ children, delay = 0, style }: { children: React.ReactNode; delay?: number; style?: React.CSSProperties }) {
   const ref = useReveal()
   return (
-    <div ref={ref} className="reveal" style={{ transitionDelay: `${delay}ms` }}>
+    <div ref={ref} className="reveal" style={{ transitionDelay: `${delay}ms`, ...style }}>
       {children}
     </div>
   )
