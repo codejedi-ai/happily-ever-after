@@ -8,10 +8,13 @@ import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 
 const navLinks = [
-  { label: 'The Journey',  path: '/journey' },
-  { label: 'Partners',     path: '/partners' },
-  { label: 'Plan A Visit', path: '/visit' },
-  { label: 'Governance',   path: '/governance' },
+  { label: 'The Journey',    path: '/journey' },
+  { label: 'Culture Towns',  path: '/culture-towns' },
+  { label: 'Partners',       path: '/partners' },
+  { label: 'Flights In',     path: '/flights' },
+  { label: 'Plan A Visit',   path: '/visit' },
+  { label: 'Governance',     path: '/governance' },
+  { label: 'Investor Pitch', path: '/pitch', highlight: true },
 ]
 
 export default function Navbar() {
@@ -58,6 +61,28 @@ export default function Navbar() {
           <Stack direction="row" spacing={0.5} sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1 }}>
             {navLinks.map((link) => {
               const active = location.pathname === link.path
+              if ('highlight' in link && link.highlight) {
+                return (
+                  <Button
+                    key={link.path}
+                    onClick={() => navigate(link.path)}
+                    size="small"
+                    variant={active ? 'contained' : 'outlined'}
+                    sx={{
+                      ml: 1,
+                      fontWeight: 800,
+                      fontSize: '0.78rem',
+                      borderRadius: 2,
+                      borderColor: 'rgba(255,204,77,0.6)',
+                      color: active ? '#07101a' : '#ffe9af',
+                      bgcolor: active ? '#ffe9af' : 'transparent',
+                      '&:hover': { borderColor: '#ffe9af', bgcolor: 'rgba(255,204,77,0.15)' },
+                    }}
+                  >
+                    {link.label}
+                  </Button>
+                )
+              }
               return (
                 <Button
                   key={link.path}

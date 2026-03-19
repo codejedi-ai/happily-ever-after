@@ -20,18 +20,18 @@ export default function DatingAppPartners() {
         >
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} alignItems={{ xs: 'flex-start', sm: 'center' }} sx={{ mb: 1.5 }}>
             <Typography variant="h4" sx={{ fontWeight: 800 }}>
-              Dating Apps Are Natural Partners
+              Dating & Marriage Apps Are Natural Partners
             </Typography>
             <Chip
-              label="Tinder · Hinge · Bumble · Match Group"
+              label="Tinder · Hinge · Bumble · POF · Zoosk · Badoo · Match Group & more"
               size="small"
               sx={{ bgcolor: 'rgba(255,107,107,0.12)', color: '#ffb3b3', border: '1px solid rgba(255,107,107,0.4)', fontWeight: 700 }}
             />
           </Stack>
           <Typography sx={{ color: '#bcd3e2', lineHeight: 1.85, maxWidth: 820 }}>
-            Every major dating app has the same unsolved problem: they create matches but have no physical
+            Every major matching app has the same unsolved problem: they create matches but have no physical
             infrastructure to help people actually meet — especially across borders. The city is the missing
-            piece of the global dating supply chain. For apps, this is a new premium revenue layer, a
+            piece of the international marriage supply chain. For apps, this is a new premium revenue layer, a
             safety story, and a first-party data source they cannot build anywhere else.
           </Typography>
         </Paper>

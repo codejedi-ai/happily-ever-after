@@ -7,17 +7,23 @@ import JourneyPage from './pages/JourneyPage'
 import PartnersPage from './pages/PartnersPage'
 import VisitPage from './pages/VisitPage'
 import GovernancePage from './pages/GovernancePage'
+import FlightsPage from './pages/FlightsPage'
+import CultureTownsPage from './pages/CultureTownsPage'
+import PitchPage from './pages/PitchPage'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/"            element={<Home />} />
-        <Route path="/journey"     element={<JourneyPage />} />
-        <Route path="/partners"    element={<PartnersPage />} />
-        <Route path="/visit"       element={<VisitPage />} />
-        <Route path="/governance"  element={<GovernancePage />} />
+        <Route path="/"               element={<Home />} />
+        <Route path="/journey"        element={<JourneyPage />} />
+        <Route path="/culture-towns"  element={<CultureTownsPage />} />
+        <Route path="/partners"       element={<PartnersPage />} />
+        <Route path="/visit"          element={<VisitPage />} />
+        <Route path="/governance"     element={<GovernancePage />} />
+        <Route path="/flights"        element={<FlightsPage />} />
+        <Route path="/pitch"          element={<PitchPage />} />
       </Routes>
       <Footer />
 

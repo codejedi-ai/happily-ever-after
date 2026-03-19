@@ -56,7 +56,7 @@ export default function HeroSection() {
       <Container maxWidth="lg">
         <Box sx={{ maxWidth: 720 }}>
           <Chip
-            label="The Las Vegas of Global Dating"
+            label="The Las Vegas of International Marriages"
             sx={{
               mb: 2.5,
               bgcolor: 'rgba(255,204,77,0.14)',
